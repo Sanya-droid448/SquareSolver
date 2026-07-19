@@ -1,5 +1,8 @@
 # SquareSolver
 Program for Solving Quadratic Equations Using the Discriminant
+
+
+
 #include<stdio.h>
 #include<math.h>
 #include <string.h>

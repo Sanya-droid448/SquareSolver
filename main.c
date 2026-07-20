@@ -1,6 +1,8 @@
     #include<stdio.h>
     #include<math.h>
     #include <string.h>
+
+
     int main()
     {
     double coef_a = 0, coef_b = 0, coef_c = 0, D = 0;
@@ -19,14 +21,14 @@
     printf("\n Enter the coefficients a, b, and c.:\n");
    numargumread= scanf("%lf %lf %lf", &coef_a, &coef_b, &coef_c );
     if (numargumread != 3)
-    {
+   {
     printf("You need to enter three numbers!\n");
     continue;
-    }
+   }
 
 
    if (coef_a==0)
-    {
+ {
     double lineequat = -coef_c / coef_b;
     printf("x=%lf\n",lineequat);
     if (coef_c==0)
@@ -34,7 +36,7 @@
         printf("The equation has no roots.\n");
     continue;
     }
-    }
+  }
   D = coef_b * coef_b - 4 * coef_a * coef_c;
     printf("The discriminant is equal to: %.2lf\n", D);
     if ( fabs(D) ==0)
@@ -70,6 +72,6 @@
 
     }
 
-    }
+ }
     return 0;
     }
